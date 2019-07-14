@@ -12,6 +12,6 @@
   "dependencies": {
     "snarkjs": "^0.1.14",
     "websnark": "0.0.4",
-    "big-integer": "latest"
+    "big-integer": "1.6.44"
   }
 }

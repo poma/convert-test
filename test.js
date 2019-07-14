@@ -32,7 +32,7 @@ function convertWitness2(witness) {
   };
   for (let i=0; i<witness.length; i++) {
     for (let j=0; j<8; j++) {
-      const v = Number(witness[i].shr(i * 32).and(BigInt(0xFFFFFFFF)));
+      const v = Number(witness[i].shr(j * 32).and(BigInt(0xFFFFFFFF)));
       h.dataView.setUint32(h.offset, v, true);
       h.offset += 4;
     }
